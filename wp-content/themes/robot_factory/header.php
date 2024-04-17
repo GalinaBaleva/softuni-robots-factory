@@ -32,7 +32,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <a href="<?php get_home_url(); ?>"><img src="<?php echo ROBOTS_FACTORY_ASSETS_URL?>/images/logo.png" alt="logo"></a>
+                    <a href="<?php get_home_url(); ?>"><img src="<?php echo ROBOTS_FACTORY_ASSETS_URL ?>/images/logo.png" alt="logo"></a>
                 </div>
                 <div class="col-sm-3 col-sm-offset-3 text-right">
                     <span class="ion-android-cart"></span> 0 products
@@ -64,15 +64,19 @@
                             <span class="icon-bar"></span>
                         </button>
                     </div>
+                    <?php
+                    if (has_nav_menu('header_menu')) {
 
-                    <div class="collapse navbar-collapse" id="site-nav-bar">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="shop.html">Shop</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
+                        wp_nav_menu($arrgs = array(
+                            'menu'                => "site-nav-bar", // (int|string|WP_Term) Desired menu. Accepts a menu ID, slug, name, or object.
+                            'menu_class'          => "nav navbar-nav", // (string) CSS class to use for the ul element which forms the menu. Default 'menu'.
+                            'menu_id'             => "site-nav-bar-id", // (string) The ID that is applied to the ul element which forms the menu. Default is the menu slug, incremented.
+                            'container'           => "ul", // (string) Whether to wrap the ul, and what to wrap it with. Default 'div'.
+                            'container_class'     => "collapse navbar-collapse", // (string) Class that is applied to the container. Default 'menu-{menu slug}-container'.
+                            'container_id'        => "site-nav-bar", // (string) The ID that is applied to the container.
+                            'theme_location'      => "header_menu", // (string) Theme location to be used. Must be registered with register_nav_menu() in order to be selectable by the user.
+                        ));
+                    }
+                    ?>
                 </nav>
             </div>
