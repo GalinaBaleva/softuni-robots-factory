@@ -36,17 +36,17 @@
                     <div class="col-sm-3">
                         <h3>Our Services</h3>
                         <div class="widget-img-box">
-                            <a class="test-popup-link" href="assets/images/widget-big-1.png">
-                                <img class="widget-img" src="assets/images/widget-1.png" alt="widget">
+                            <a class="test-popup-link" href="<?php echo ROBOTS_FACTORY_ASSETS_URL?>images/widget-big-1.png">
+                                <img class="widget-img" src="<?php echo ROBOTS_FACTORY_ASSETS_URL?>images/widget-1.png" alt="widget">
                             </a>
-                            <a class="test-popup-link" href="assets/images/widget-big-2.png">
-                                <img class="widget-img" src="assets/images/widget-2.png" alt="widget">
+                            <a class="test-popup-link" href="<?php echo ROBOTS_FACTORY_ASSETS_URL?>images/widget-big-2.png">
+                                <img class="widget-img" src="<?php echo ROBOTS_FACTORY_ASSETS_URL?>images/widget-2.png" alt="widget">
                             </a>
-                            <a class="test-popup-link" href="assets/images/widget-big-3.png">
-                                <img class="widget-img" src="assets/images/widget-3.png" alt="widget">
+                            <a class="test-popup-link" href="<?php echo ROBOTS_FACTORY_ASSETS_URL?>images/widget-big-3.png">
+                                <img class="widget-img" src="<?php echo ROBOTS_FACTORY_ASSETS_URL?>images/widget-3.png" alt="widget">
                             </a>
-                            <a class="test-popup-link" href="assets/images/widget-big-4.png">
-                                <img class="widget-img" src="assets/images/widget-4.png" alt="widget">
+                            <a class="test-popup-link" href="<?php echo ROBOTS_FACTORY_ASSETS_URL?>images/widget-big-4.png">
+                                <img class="widget-img" src="<?php echo ROBOTS_FACTORY_ASSETS_URL?>images/widget-4.png" alt="widget">
                             </a>
                         </div>
                     </div>
